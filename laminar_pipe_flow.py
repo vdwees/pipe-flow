@@ -95,6 +95,8 @@ def delta_t_max(delta_x, delta_y, a, num_dimensions=2):
 def take_step(p, u, v, delta_t, Re, delta_x, delta_y, a):
     """
     This function updates the values of p, u, and v to one time step ahead
+
+    Implements Reynolds-Reduced Navier-Stokes in a 2-d stagered grid
     """
 
     # Extrapolate v and u on boundaries by reversing the averaging equation
